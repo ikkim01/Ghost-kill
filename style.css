@@ -1,0 +1,71 @@
+*{
+    max-width: 1000px;
+}
+
+.button-align{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.gamestart {
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+}
+.kill-count {
+    width: 1000px;
+    font-weight: bold;
+    margin: 10px 200px
+}
+#bg {
+    width: 600px;
+    height: 440px;
+    background-image: url('./images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px 200px;
+    position: relative;
+}
+#bg .hero {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top:90%;
+    background-image: url('./images/hero.png');
+    background-size: 200px 40px;
+    background-position-x: 0px;
+    left: 50%;
+}
+
+#bg .ghost {
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top:0;
+    left:0%;
+    background-image: url(./images/enemy.png);
+    background-size: 100px 45px;
+    background-position-x: 0px;
+    display: none;
+}
+
+#bg .gameover {
+    display: none;
+    background-color: red;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    width: 600px;
+    text-align: center;
+    font-size: 30px;
+    height: 30px;
+}
